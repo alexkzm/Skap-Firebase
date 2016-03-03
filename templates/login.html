@@ -1,0 +1,12 @@
+<div class='login'>
+	<div>
+		<input class='box' type="email" placeholder='Please enter email' ng-model="user.email" />
+	</div>
+	<div>
+		<input class='box' type="password" placeholder='Please enter password' ng-model="user.password" />
+	</div>
+	<button type="submit" class = "btn-primary btn-lg" role = "button" ng-click="login(user)">Log In</button><br>
+	<button type="submit" class = "btn-primary btn-lg" role = "button" ng-click="loginWithGoogle()">Google Login</button><br>
+	<button type="submit" class = "btn-success btn-lg" role = "button" ng-click="loginWithGithub()">Github Login</button><br>
+	<button type="submit" class = "btn-primary btn-lg" role = "button"><a style="color:white" ui-sref="signup">Sign Up</a></button>
+</div> 

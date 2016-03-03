@@ -1,0 +1,26 @@
+<div>
+	<div class='words'>
+	<p>Leave Feedback</p>
+	</div>
+	<div class='form'>
+	<form class='feed' name="newThreadForm">
+		<input type="text" ng-model="newThread.nickname" placeholder="nickname" required/>
+		<input type="text" ng-model="newThread.answer" placeholder="useful/not useful" required/>
+		<input type="text" ng-model="newThread.mood" placeholder="new mood" required/>
+		<button type="submit" class = "btn-primary btn-lg" role = "button" ng-click="createThread()">Post</button>
+	</form>
+	</div>
+	<div class='words'>
+	<p>Past Feedback</p>
+	</div>
+	<div class='past'>
+		<div ng-repeat="thread in threads">
+				<span>{{ thread.nickname }}</span>
+				found app <span>{{ thread.answer }}</span>
+				and  <span>{{ thread.nickname }}</span> became <span>{{ thread.mood }}</span>
+				<hr class='sep'>
+		</div>
+	</div>
+
+	<button type="submit" class = "btn-primary btn-lg" role = "button"><a style="color:white" href="#/login">Logout</a></button>
+</div>
